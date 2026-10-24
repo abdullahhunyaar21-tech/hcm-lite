@@ -1,0 +1,6 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Payslip · HCM Lite</title><link rel="stylesheet" href="css/style.css"></head>
+<body><div class="layout"><aside class="sidebar" id="sidebar"></aside><main class="main"><div class="topbar"><button class="btn ghost menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button><h1>Payslip</h1></div><div id="pageMsg"></div>
+<section class="card no-print"><div class="grid"><div id="empPick" hidden><label for="slipEmp">Employee</label><select id="slipEmp"></select></div><div><label for="slipMonth">Month</label><input type="month" id="slipMonth"></div></div><div class="row"><button class="btn" id="printBtn" type="button">Print / Save as PDF</button></div><p class="muted small-text">Printing opens your browser’s print dialog; choose “Save as PDF” there.</p></section><section class="card" id="slip"></section>
+</main></div>
+<script src="js/storage.js"></script><script src="js/auth.js"></script><script src="js/attendance.js"></script><script src="js/leave.js"></script><script src="js/payslip.js"></script><script>initPayslipPage();</script></body></html>
